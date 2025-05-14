@@ -1,0 +1,19 @@
+site_name: SynBioHub2 Docs
+theme:
+  name: material
+  logo: images/brand.svg
+  favicon: images/favicon.ico
+  palette:
+    - scheme: default
+      primary: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+plugins:
+  - search
+  - awesome-pages
