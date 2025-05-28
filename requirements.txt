@@ -1,2 +1,3 @@
 mkdocs-awesome-nav
 mkdocs-title-casing-plugin
+mkdocs-nav-weight
