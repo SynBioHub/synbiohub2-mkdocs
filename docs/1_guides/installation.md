@@ -1,6 +1,5 @@
 ---
 weight: 10
-hidden: false
 ---
 
 ## General

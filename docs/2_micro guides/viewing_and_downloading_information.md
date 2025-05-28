@@ -1,6 +1,5 @@
 ---
 weight: 20
-hidden: false
 ---
 
 ## 2.1 Viewing the Information

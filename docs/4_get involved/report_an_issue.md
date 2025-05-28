@@ -1,6 +1,5 @@
 ---
 weight: 5
-hidden: false
 ---
 
 If you want to report an error please see the respective pages. 

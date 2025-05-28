@@ -1,6 +1,5 @@
 ---
 weight: 20
-hidden: false
 ---
 
 When you'll first install SynBioHub locally and navigate to ```http://localhost:3333/```, and the setup page will load since you have not completed setup yet.

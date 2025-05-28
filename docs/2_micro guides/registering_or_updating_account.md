@@ -1,6 +1,5 @@
 ---
 weight: 30
-hidden: false
 ---
 
 ## 3.1 Registering an Account

@@ -1,6 +1,5 @@
 ---
 weight: 40
-hidden: false
 ---
 
 ## 4.1 Submitting 

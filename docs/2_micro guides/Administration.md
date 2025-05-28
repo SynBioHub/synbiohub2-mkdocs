@@ -1,6 +1,5 @@
 ---
 weight: 50
-hidden: false
 ---
 
 Note: **The administration section will only be available, if you're using a SynBioHub local instance. If you're using a global instance, such as [this](https://synbiohub.org/) one, then the administration section won't be available unless you have privileged access to SynBioHub.**

@@ -1,6 +1,5 @@
 ---
 weight: 50
-hidden: false
 ---
 
 * *McLaughlin, James Alastair, et al. ["SynBioHub: a standards-enabled design repository for synthetic biology."](https://pubs.acs.org/doi/abs/10.1021/acssynbio.7b00403) ACS synthetic biology 7.2 (2018): 682-688.*

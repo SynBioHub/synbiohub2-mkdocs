@@ -1,6 +1,5 @@
 ---
 weight: 10
-hidden: false
 ---
 
 There are a variety of ways to search for information in SynBioHub, such as using keywords, sequences, advanced searches and  SPARQL queries. They're explained in detail as follows:

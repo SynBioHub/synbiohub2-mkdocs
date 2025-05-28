@@ -1,6 +1,5 @@
 ---
 weight: 99
-hidden: false
 ---
 
 This section contains definitions for various terminologies used in this documentation

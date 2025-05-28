@@ -1,6 +1,5 @@
 ---
 weight: 0
-hidden: false
 ---
 We have released a [workshop tutorial](https://github.com/SynBioHub/synbiohub3/wiki/Workshop-Instructions). The workshop shows how to setup a local instance of SynBioHub, utilizing the SynBioHub API to interface with pySBOL, and how to setup a simple plugin in SynBioHub.
 

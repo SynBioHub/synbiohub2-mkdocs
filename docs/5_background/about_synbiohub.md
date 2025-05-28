@@ -1,6 +1,5 @@
 ---
 weight: 1
-hidden: false
 ---
 
 SynBioHub2 is made of two intertwined projects:

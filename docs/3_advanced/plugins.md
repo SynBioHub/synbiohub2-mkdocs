@@ -1,6 +1,5 @@
 ---
 weight: 40
-hidden: false
 ---
 
 ## 1. What are Plugins?

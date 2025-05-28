@@ -1,6 +1,5 @@
 ---
 weight: 50
-hidden: false
 ---
 
 There are a couple of ways to share data in SynBioHub. They're mentioned as follows:
