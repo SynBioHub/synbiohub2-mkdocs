@@ -3,7 +3,7 @@ weight: 10
 hidden: false
 ---
 
-### General
+## General
 The docker-compose files in [this repository](https://github.com/SynBioHub/SynBioHub2-docker) contains various configurations for deploying SynBioHub2.
 
 The base configuration, described with `docker-compose.yml`, is simply SynBioHub2, its graph database Virtuoso, and an autohealer.
@@ -45,7 +45,7 @@ To run the base configuration:
    `docker-compose -f ./docker-compose.yml down`
   	
 
-### With SBOLExplorer
+## With SBOLExplorer
 You can also run SynBioHub2, by using SBOlExplorer.
 To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main docker-compose, i.e. for step 5 run the following command: 
 
@@ -55,8 +55,8 @@ To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `do
 
 **The `sysctl -w vm.max_map_count=262144` command runs only on linux, it is needed for Elastic Search, a component of SBOLExplorer. It is likely unnecessary on MacOS***
 
-### With Plugins
-If you are unfamiliar with plugins, please read [the docs](/#articles/3_advanced/plugins)
+## With Plugins
+If you are unfamiliar with plugins, please read [the docs](/3_advanced/plugins)
 
 To add plugins to the configuration, change the command mentioned in step 5 to: 
 
@@ -73,3 +73,5 @@ A table of currently available plugins can be found [here](https://synbiohub.git
 **Installation from source is not recommended for non contributors due to requiring many dependencies of specific versions.**
 
 Follow the instructions on the following [GitHub README](https://github.com/SynBioHub/SynBioHub3) to install SynBioHub2 locally onto your system.
+
+**[Next you should setup your instance before going public](/Guides/setup)**

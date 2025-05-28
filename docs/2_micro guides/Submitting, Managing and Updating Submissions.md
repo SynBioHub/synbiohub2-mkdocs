@@ -38,7 +38,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
     | **[GFF3](http://asia.ensembl.org/info/website/upload/gff3.html)**       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines.|
     | **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)**      | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. |
 | **[zip](https://en.wikipedia.org/wiki/Zip_(file_format))** | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. |
-----------------------------------------------------------------------------------------------------------------
+
 		Inorder to submit a file you must have already submitted the collection. Once you do you can click **Submit** and it will submit to the collection just created.
   
 * **Handler**: You also need to select a handler. By default only one option is provided but more handlers can be added via [submit plugins](https://github.com/SynBioHub/Plugin-Submit-Excel-Library).     
@@ -63,7 +63,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
     | GFF3       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. To know more about GFF3, click [here](http://asia.ensembl.org/info/website/upload/gff3.html).|
     | FASTA       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. To know more about FATSA file format, click [here](https://en.wikipedia.org/wiki/FASTA_format)|
 | Zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
-----------------------------------------------------------------------------------------------------------------
+
 
 4. Finally, you have an option to overwrite the existing objects in that collection i.e, removing all the existing objects in the collection and adding new ones or keeping the old resources and adding the new ones.
 

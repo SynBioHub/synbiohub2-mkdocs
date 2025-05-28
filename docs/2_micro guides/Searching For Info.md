@@ -39,7 +39,7 @@ On the search results page, there is button labeled as **sequence search**. Clic
 | # of failed hits before stopping|Then, you need to enter the maximum number of non-matching target sequences, that are to be considered before the search is halted. This option works in pair with the flag above. The search process sorts the target sequences by decreasing number of k-mers they have in common with the query sequence, using that information as a proxy for sequence similarity. After pairwise alignments, if none of the first x examined target sequences pass the acceptation criteria, the search process stops for that query (no hit). If this flag is set to a higher value, more target sequences are considered. If the flag above and this flag are both set to 0, the complete database is searched. |
 | Percent Match | Then, we have is the *percentage match*, which has a value between 0 and 1. This is the value of pairwise identity that must match with the sequence, otherwise the sequence is rejected. |
 | Pairwise Identity Definition | You may select the value for this attribute from the following options: 1) **Default**: Edits distance excluding the terminal gaps,   2) **CD-HIT definition**: Considers the following ratio: (matching columns) / (shortest sequence length),   3) **Marine Biological Lab definition**: counts each gap opening (internal or terminal) as a single mismatch, whether or not the gap was extended: 1.0 - [(mismatches + gap openings)/(longest sequence length)],   4) **BLAST Definition**: equivalent to edit distance for global pairwise alignments    |
--------------------------------------------------------------------------------
+
 After filling up the desired options, press the **search** button to get the search results.
 
 
@@ -63,7 +63,7 @@ On the search results page, there is collumn on the left hand side it contains a
 | Role | select the **role** of the record from this dropdown menu. It contains various sub-categories of **[igem](https://igem.org/Main_Page)** or **[SO](http://www.sequenceontology.org/miso/current_release/term/SO:0000316)**.|
 | Collections| You may select any number of collections, based on your convenience. To select a collection, click on the value attribute of collection and select it from the drop down menu|
 | Customisable Filters | You may apply customised filters for the design you want to search for. For that purpose, click **add filter** and a drop down menu will appear having various parameters for filtering. These parameters are basically, the properties for filtering the records. Select the property that you want your record to be filtered by, and then click on filter. This shall reload the page and then select the value of the filter, from the drop down on the right hand side. You may provide as many as 5 customised filters which'er optional|
------------------------------------------------------------------------------
+
 
 
 After selecting the desired options for performing a search using advanced parameters, click **search**. This will return the records after comprehending all the details that you've entered.
@@ -76,7 +76,7 @@ After selecting the desired options for performing a search using advanced param
 | Collection Description| This is the description string that briefly explains your submission.|
 | Collection ID | This is a user-defined alphanumeric string identifier for the submission and it should contain alphanumeric and underscores characters only.|
 | Collection Version| This is the alphanumeric string which is associated with the submission.|
---------------------------------------------------------------------------------------------
+
 
 After you've filled in all the available options, click on **create collection**. This will return the search results to you, in the form a private collection.
 

@@ -20,10 +20,11 @@ Following Steps need to be followed for registering onto SynBioHub:
 | Email Address| Enter the Email Address, through which you want to get registered. If in future you forget your login credentials, then this shall be used for sending a recovery password for your account| 
 | Username | You have to enter a username of your own choice. This shall be displayed on the record page of every record that you submit|
 |Password | Enter a password (preferably a strong one) for keeping your user account safe|
----------------------------------------------------------------------------------------------------
-4. When you need to login into your SynBioHub account, click on the "login or Register" option. Then you need to enter your email address and your password to access your account.
 
-### 3.2 Updating an Account
+
+4. 
+
+## 3.2 Updating an Account
 
 If you ever need to update your account, the following steps need to be followed:
 

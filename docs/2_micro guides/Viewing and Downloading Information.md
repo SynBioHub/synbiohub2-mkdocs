@@ -88,7 +88,7 @@ The header of the table as explained as follows:
 | Identifier         | This contains the ID or the identifier of that particular record,that is provided by the user who had submitted that particular record. Just besides the header there is small figure, clicking on which shall sort this table on the basis of reverse priority of alphabets i.e, Z-A|
 | Type | This represents the type of the record, i.e. whether it is a module, sequence, activity, etc.|
 |Description | This is a brief description, that is provided by the user, who'd submitted that particular records. This description, in brief describes, what that particular record does. |
---------------------------------------------------------------------
+
 
 ### 2.1.3 Viewing a Module (Definition)
 
@@ -106,7 +106,7 @@ Then, what we have is the section titled, **[functional components](https://diss
 | **[Access](https://dissys.github.io/sbol-owl/sbol-owl.html#access)/[Direction](https://dissys.github.io/sbol-owl/sbol-owl.html#direction)** | 1) **Access**: The access property is a REQUIRED URI that indicates whether the ComponentInstance can be referred to remotely by a MapsTo on another ComponentInstance or Module contained by a different parent ComponentDefinition or ModuleDefinition (one that does not contain this ComponentInstance).  2) **Direction**:Each FunctionalComponent MUST specify via the direction property whether it serves as an input, output, both, or neither for its parent ModuleDefinition object. |
 | **[Definition](https://dissys.github.io/sbol-owl/sbol-owl.html#definition)** and **[MapsTo](https://dissys.github.io/sbol-owl/sbol-owl.html#MapsTo)**    | 1) **Definition**: The definition property is a REQUIRED URI that refers to the ComponentDefinition of the ComponentInstance. ComponentDefinition effectively provides information about the types and roles of the ComponentInstance.  2) **MapsTo**: When ComponentDefinition and ModuleDefinition objects are composed into structural and functional hierarchies using ComponentInstance and Module objects, it is often the case that some ComponentInstance objects are intended to represent the same entity in the overall design. The purpose of the MapsTo class is to make these identity relationships clear and explicit. For example, consider a ModuleDefinition for a genetic inverter that includes a FunctionalComponent for an abstract repressor protein. When this ModuleDefinition is instantiated within a “higher level” ModuleDefinition that includes a FunctionalComponent for a LacI protein, the MapsTo object can be used to indicate that the repressor protein in the first ModuleDefinition is LacI in the context of the composite design. |
 | **[Public](https://dissys.github.io/sbol-owl/sbol-owl.html#public)** and **[Inout](https://dissys.github.io/sbol-owl/sbol-owl.html#inout)** | 1) **Public**: Indicates that a ComponentInstance MAY be referred to by remote MapsTo objects. 2) **Inout**: Indicates that the FunctionalComponent is both an input and output.|
---------------------------------------------------------------------
+
 
 Subsequently, just below the functional components we have the **[Interactions](https://dissys.github.io/sbol-owl/sbol-owl.html#Interaction)** section. Interaction basically, provides a more detailed description of how the FunctionalComponent objects of a ModuleDefinition are intended to work together. It has a table consisting of the following attributes:
 
@@ -127,7 +127,7 @@ Just below the **details** table, you'll be able to view a table titled, **compo
 | **[Access](https://dissys.github.io/sbol-owl/sbol-owl.html#access)** | The access property is a REQUIRED URI that indicates whether the ComponentInstance can be referred to remotely by a MapsTo on another ComponentInstance or Module contained by a different parent ComponentDefinition or ModuleDefinition (one that does not contain this ComponentInstance)|
 | **[Instance](http://sbols.org/v2#ComponentInstance)** | The ComponentInstance abstract class is inherited by SBOL classes that represent the usage or occurrence of a ComponentDefinition within a larger design (that is, another ComponentDefinition or ModuleDefinition). |
 | **[Definition](https://dissys.github.io/sbol-owl/sbol-owl.html#definition)** | The definition property is a REQUIRED URI that refers to the ComponentDefinition of the ComponentInstance. As described in the previous section, this ComponentDefinition effectively provides information about the types and roles of the ComponentInstance. |
------------------------------------------------------------------------------------------------------
+
 Below the components table is another table titled, **sequence annotations**, having the following attributes:
 
 | Name        | Description          |
@@ -135,7 +135,7 @@ Below the components table is another table titled, **sequence annotations**, ha
 | **[Sequence Annotations](https://dissys.github.io/sbol-owl/sbol-owl.html#SequenceAnnotation)** |The SequenceAnnotation class describes one or more regions of interest on the Sequence objects referred to by its parent ComponentDefinition. In addition, SequenceAnnotation objects can describe the substructure of their parent ComponentDefinition through association with the Component objects contained by this ComponentDefinition.|
 | **[Location](https://dissys.github.io/sbol-owl/sbol-owl.html#Location)** |  Extended by the Range, Cut, and GenericLocation classes. |
 | **[Components](https://dissys.github.io/sbol-owl/sbol-owl.html#component)/[Role](https://dissys.github.io/sbol-owl/sbol-owl.html#role)** | 1) **Components**: The components property is OPTIONAL and MAY specify a set of Component objects that are contained by the ComponentDefinition. The set of relations between Component and ComponentDefinition objects is strictly acyclic.   2) **Role**: Clarifies the potential function of an entity in a biochemical or physical context. When it is used for ComponentDefinitions, it MUST identify terms from ontologies that are consistent with the types property of the ComponentDefinition. For example, the roles property of a DNA or RNA ComponentDefinition could contain URIs identifying terms from the Sequence Ontology (SO).|
----------------------------------------------------------------------
+
 
 ### 2.1.5 Viewing a Sequence
 
@@ -170,7 +170,7 @@ Following are the types of formats that you may be able to download a record:
 | **[GFF3](http://asia.ensembl.org/info/website/upload/gff3.html)**       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. |
  | **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)**       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics.|
   | Image     | Image is a capture of the Visbol display at the top of the page.|
-----------------------------------------------------------------------------------------
+
 
 Additional download options may be available via the use of **[download plugins](https://synbiohub.github.io/plugins/#34-download)**.
 
