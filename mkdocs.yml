@@ -1,5 +1,8 @@
 site_name: SynBioHub2 Docs
 theme:
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
   name: material
   logo: images/brand.svg
   favicon: images/favicon.ico
