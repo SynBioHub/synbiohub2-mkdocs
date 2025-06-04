@@ -2,18 +2,20 @@
 weight: 40
 ---
 
+# Plugins
+
 ## 1. What are Plugins?
-Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional ‘custom’ functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
+Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional 'custom' functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
 
 ### 1.1 Types of Plugins
 Currently there are three types of plugins available: 
 1. Submit: Submit plugins are available to use from the [submit endpoint](https://synbiohub.github.io/api-docs/?python#submission-endpoints). They work by taking in the file that is uploaded in the submit and processing it to return SBOL to the SynBioHub endpoint.
 
-2. Visual: Visual plugins are available on all ‘endpoint’ pages, for example pages for components, sequences, activities, etc. Visual plugins return html to be displayed on the page.
+2. Visual: Visual plugins are available on all 'endpoint' pages, for example pages for components, sequences, activities, etc. Visual plugins return html to be displayed on the page.
 
-3. Download: Download plugins are available on all ‘endpoint’ pages, for example pages for components, sequences, activities, etc. Download plugins return some kind of file which is downloaded by the user.
+3. Download: Download plugins are available on all 'endpoint' pages, for example pages for components, sequences, activities, etc. Download plugins return some kind of file which is downloaded by the user.
 
-![Overview of Plugins](/images/howPlugins.png)
+![Overview of Plugins](../images/howPlugins.png)
 
 ## 2. How Do Plugins Work?
 
@@ -36,8 +38,8 @@ A full list of plugin file names and their descriptions can be found [here](http
 
 The most common problems that you may face while executing the commands mentioned above are as follows:-
 
-1. The plugins might try to use ports that are already in use. If upon running the above commands and then using `docker ps` not all of the   ‘images’ that you expect are present then try the following command: `docker ps –a`. 
-  If you now see the image(s) you were missing with the status ‘created’ it suggests that they have a port clash. If this is the case you can go in the docker-compose file for the appropriate plugin and change the port number (the first four digit number under “ports”). Then try running step 4 of the above commands again.
+1. The plugins might try to use ports that are already in use. If upon running the above commands and then using `docker ps` not all of the   'images' that you expect are present then try the following command: `docker ps –a`. 
+  If you now see the image(s) you were missing with the status 'created' it suggests that they have a port clash. If this is the case you can go in the docker-compose file for the appropriate plugin and change the port number (the first four digit number under “ports”). Then try running step 4 of the above commands again.
 
 
 2. If you've locally installed SynBioHub using the above commands it might cause issues in some plugins, that will receive urls that look like: ``http://localhost:7777/xxxxxxx``. Localhost in docker containers refers to the container itself. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and the solution cab be found on [stack overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container) and on [docker](https://docs.docker.com/network/host/).
@@ -52,7 +54,7 @@ Use `http://localhost:<port>/` e.g. `http://localhost:8093/` for the Excel Submi
 
 * Another alternative that is not recommended but still can be used is to enter `http://<synbiohub docker network ip address>:<port> /` e.g. `http://172.18.0.1:8093/` for the Excel Submit Library plugin when the synbiohub-docker network is "172.18.0.1".
 
-* Find out the synbiohub-docker network ip by typing into the terminal the following command `docker inspect synbiohub-docker_default` and the address following ‘Gateway’ is the ip address you want. Note that this will change every time you run the docker compose command.
+* Find out the synbiohub-docker network ip by typing into the terminal the following command `docker inspect synbiohub-docker_default` and the address following 'Gateway' is the ip address you want. Note that this will change every time you run the docker compose command.
 
 * If in the case that plugins are hosted elsewhere on a public server then simply use the url to access them e.g.: https://seqviz.synbiohub.org/ for the seqviz plugin (this method is also possible if you have named and exposed internal ports from your docker compose (this requires [caddy](https://caddyserver.com/)).
 
@@ -70,7 +72,7 @@ It is suggested that the same publish ports are used when using docker compose. 
 ##### 2.2.2.1 Common Problems
 The most common problems that you may face while executing the commands mentioned above are as follows:-
 
-1. Localhost:-  If the plugin is being run as a docker container that localhost may cause problems as localhost is considered within the container and won’t point to the localhost on your computer. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and solution can be found on [stack-overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container and https://docs.docker.com/network/host/).
+1. Localhost:-  If the plugin is being run as a docker container that localhost may cause problems as localhost is considered within the container and won't point to the localhost on your computer. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and solution can be found on [stack-overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container and https://docs.docker.com/network/host/).
 
 #### 2.2.3 Using Standalone Methods
 
@@ -191,7 +193,7 @@ Common RDF types are:
     {'type': 'Component'}
     
 ###### Returns
-Return a status of 200 if the type is acceptable and a 4xx status if it isn’t.
+Return a status of 200 if the type is acceptable and a 4xx status if it isn't.
 
 ##### 3.2.1.3 Run
 
@@ -259,17 +261,17 @@ If it is up and running it should return a 200 status to a get request
 ##### Receives
 
 
-{‘manifest’
+{'manifest'
     
-    {‘files’
+    {'files'
     
        [List of dictionaries (one for every file). *Each dictionary has the keys*:
     
-       ‘url’ the single-use URL for the file submitted
+       'url' the single-use URL for the file submitted
     
-       ‘filename’ the encrypted file name (with correct extension)
+       'filename' the encrypted file name (with correct extension)
     
-       ‘type’ the mime of the file (see https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+       'type' the mime of the file (see https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
 
 
 * Example 1:
@@ -294,10 +296,10 @@ If it is up and running it should return a 200 status to a get request
   {"url": "http://synbiohub.org/expose/93c25d15-9fe2-4862-b602-ddbdac2c4333", "filename": "mbr5wW6CIseoq-0Y4MkM8DTM.xml", "type": "application/xml"}]}}
 
 ##### Returns
-{‘manifest’:[
+{'manifest':[
 Dictionaries each of which contains
-‘filename’: the encrypted file name (with correct extension) that matches the original filename sent in the manifest from synbiohub
-‘requirement’: a number which indicates whether or not the file can be used the numbers mean: 2-file will be converted to sbol, 1-file will be used to convert other files to sbol, 0-file cannot be handled/is not useful
+'filename': the encrypted file name (with correct extension) that matches the original filename sent in the manifest from synbiohub
+'requirement': a number which indicates whether or not the file can be used the numbers mean: 2-file will be converted to sbol, 1-file will be used to convert other files to sbol, 0-file cannot be handled/is not useful
 * Example 1:
 {"manifest": [
         {
@@ -338,18 +340,18 @@ Dictionaries each of which contains
 
 ##### Recieves
 A dictionary with entries:
-{‘manifest’
-    {‘files’
+{'manifest'
+    {'files'
      
       [List of dictionaries (one for every file). Each dictionary has the keys:
      
-       ‘url’ the single-use URL for the file submitted
+       'url' the single-use URL for the file submitted
      
-       ‘filename’ the encrypted file name (with correct extension)
+       'filename' the encrypted file name (with correct extension)
      
-       ‘type’ the mime of the file (see https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+       'type' the mime of the file (see https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
      
-       ‘instanceUrl’  the top-level URL of the synbiohub instance
+       'instanceUrl'  the top-level URL of the synbiohub instance
 
 * Example 1:
 {'manifest': 
@@ -381,13 +383,13 @@ A dictionary with entries:
 
 ##### Returns
 A zip file which contains the generated SBOL files and a file called manifest.json which contains a json response manifest of the form:
-{‘results’
+{'results'
 
 [List of dictionaries (one for every file). Each dictionary has the keys:
 
-‘filename’ name of the file within the zipfile 
+'filename' name of the file within the zipfile 
 
-‘sources’ a list of filenames received from synbiohub that were used to generate the file
+'sources' a list of filenames received from synbiohub that were used to generate the file
 
 
 * Example 1:
@@ -398,11 +400,11 @@ A zip file which contains the generated SBOL files and a file called manifest.js
 
 [{'filename': oijwpjrpokk98um098m.xlsx.converted',
  
- 'sources': [‘oijwpjrpokk98um098m.xlsx']}, 
+ 'sources': ['oijwpjrpokk98um098m.xlsx']}, 
  
  {'filename': ' as9d8j0asd9j23fc.dna.converted', 
  
- 'sources': [' as9d8j0asd9j23fc.dna’]}]}
+ 'sources': [' as9d8j0asd9j23fc.dna']}]}
 
 **NOTE**: list of sources could contain more than one file (if any of the files in the evaluate endpoint were flagged as 1 they might be added to the sources for one of the other file conversions)
 
@@ -438,7 +440,7 @@ Common RDF types are:
 * Example 1:
 {'type': 'Component'}
 ##### Returns
-Return a status of 200 if the type is acceptable and a 4xx status if it isn’t
+Return a status of 200 if the type is acceptable and a 4xx status if it isn't
 #### 3.4.3 Run
 ##### Recieves
 
@@ -523,7 +525,7 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 ### 8.2  Idea of Architecture:
 * caddy is a webserver which reroutes requests to containers containers may or may not contain images which are also webservers (dockercompse files describe a set of containers which also may or may not contain webservers)
 * High ports are over 1024 and 'non-reserved' ports. ssh is to 22 (generally).
-* Key points understand that docker has: images, containers, volumes, and networks (especially important to understand what sticks around and what doesn’t when you try and refresh the containers a very useful command is prune: https://takacsmark.com/docker-prune/
+* Key points understand that docker has: images, containers, volumes, and networks (especially important to understand what sticks around and what doesn't when you try and refresh the containers a very useful command is prune: https://takacsmark.com/docker-prune/
 
 ### 8.3 Steps for Dockerising a Plugin
 * After having installed docker desktop and making sure it is up and running using an administrator account. Note that the docker website has a tutorial with mor information.
