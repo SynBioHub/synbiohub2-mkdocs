@@ -1,6 +1,8 @@
 ---
-weight: 99
+weight: 20
 ---
+
+# Glossary
 
 This section contains definitions for various terminologies used in this documentation
 

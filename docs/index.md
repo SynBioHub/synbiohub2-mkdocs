@@ -1,3 +1,7 @@
+---
+weight: 10
+---
+
 # Welcome to SynBioHub2 Documentation
 
 Welcome to the documentation for SynBioHub2! This guide will help you understand how to use SynBioHub2, whether you're:
@@ -6,21 +10,20 @@ Welcome to the documentation for SynBioHub2! This guide will help you understand
 - A developer integrating with our APIs
 - An organization wanting to host your own instance
 
-The documentation has been divided into various categories for your convenience.
-You can view the categories, in which the documentation has been divided, in the menu located on the left.
+The documentation is divided into various categories for your convenience, which you can see in the menu on the left.
 
 ## Quick Start
 
-* On **[Synbiohub's](https://synbiohub.org/)** home page, you can see various options with regards to signing up, searching, uploading as well as sharing your submissions.
+- On the **[SynBioHub](https://synbiohub.org/)** home page, you can see various options regarding signing up, searching, uploading, and sharing your submissions.
 
-* You can also view your [profile](https://synbiohub.org/profile), if in case you're already logged in.
+- You can also view your [profile](https://synbiohub.org/profile), if you're already logged in.
 
-* If you have any issues while registering and creating your user account you can visit [Registering and Updating](//Registering%20or%20Updating%20Account) section for specific instructions.
+- If you have any issues while registering and creating your user account, you can visit the [Registering or Updating Account](2_micro_guides/registering_or_updating_account.md) section for specific instructions.
 
-* For specific instructions on how to view a particular record, you can visit the [Viewing a Record](/Micro%20Guides/Viewing%20and%20Downloading%20Information) section.
+- For specific instructions on how to view a particular record, you can visit the [Viewing and Downloading Information](2_micro_guides/viewing_and_downloading_information.md) section.
 
-* For specific instructions on how to search for a particular record, navigate to the [Searching for Information](/Micro%20Guides/Searching%20For%20Info) section.
+- For specific instructions on how to search for a particular record, navigate to the [Searching for Information](2_micro_guides/searching_for_info.md) section.
 
-* For specific instructions on how to update an existing collection, visit the [Updating a submission](/Micro%20Guides/Submitting%2C%20Managing%20and%20Updating%20Submissions) section.
+- For specific instructions on how to update an existing collection, visit the [Submitting, Managing and Updating Submissions](2_micro_guides/submitting,_managing_and_updating_submissions.md) section.
 
-* For specific instructions on how to get your own SynBioHub's local instance, visit the [Installation](/Guides/installation) section and setting it up, you can get specific instructions in the [Setup](/Guides/setup) section.
+- For specific instructions on how to get your own SynBioHub local instance, visit the [Installation](1_getting_started/installation.md) section. For setting it up, you can get specific instructions in the [Setup](1_getting_started/setup.md) section.
