@@ -10,11 +10,11 @@ There are a variety of ways to search for information in SynBioHub, such as usin
 
 To search amongst various records, follow these steps:
 
-1. Navigate to SynBioHub\'s home page.
+1. Navigate to SynBioHub's home page.
 
 2. In the search box, enter the keywords for the record you want to search for and click on the search button.
 
-3. Subsequently, you shall be directed to a list of records matching the keywords that you\'ve entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description, type of the record, and privacy shall be displayed. The description column contains a brief description provided by the owner of that particular record. On the right-hand side, there is an indicator displaying whether it is a **public**, **private**, or a **remote** record. The privacy labels indicate:
+3. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description, type of the record, and privacy shall be displayed. The description column contains a brief description provided by the owner of that particular record. On the right-hand side, there is an indicator displaying whether it is a **public**, **private**, or a **remote** record. The privacy labels indicate:
     - Private: The record is available only to specific users through a private repository.
     - Public: The record is accessible to all SynBioHub users.
     - Remote: The record is publicly available but hosted on another instance of SynBioHub.
@@ -30,7 +30,7 @@ On the search results page, there is a button labeled **sequence search**. Click
 | Option Name         |              Description     |
 |---------------------|------------------------------|
 | Enter Sequence      | Enter the sequence or upload a **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)/[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)** file by clicking the choose file option just below the box. This shall search only for exact matches of the sequence. Your entry must be the first key/value pair.   |
-| Search Method       | You can choose the perspective of your search. You can perform a **global** search or an **exact** search. The exact search shall display those records which are an exact match to the sequences that you\'ve entered, and the global search will display those results which have even the smallest of similarities to the sequence that you\'ve entered.  |
+| Search Method       | You can choose the perspective of your search. You can perform a **global** search or an **exact** search. The exact search shall display those records which are an exact match to the sequences that you've entered, and the global search will display those results which have even the smallest of similarities to the sequence that you've entered.  |
 |  Number of Results                   | You may customize the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that the higher the value, the longer the runtime.  |
 | Minimum Sequence Length |You need to enter the minimum sequence length. This value specifies the minimum length of the sequence which you want to search for. Values for this parameter should not exceed 100,000. |
 | Maximum Sequence Length|You need to enter the maximum sequence length. This value specifies the maximum length of the sequence which you want to search for. Values for this parameter should not exceed 100,000. |
@@ -42,12 +42,12 @@ After filling up the desired options, press the **search** button to get the sea
 
 ### 1.3 Advanced Search
 
-On the search results page, there is a column on the left-hand side that contains a list of advanced search options. To search using advanced parameters, you can provide the values for the option as described in the table below. The records that will be displayed will match all of the criteria that you will fill in. Kindly note that you **don\'t** need to fill in all of the options. The options are as follows:
+On the search results page, there is a column on the left-hand side that contains a list of advanced search options. To search using advanced parameters, you can provide the values for the option as described in the table below. The records that will be displayed will match all of the criteria that you will fill in. Kindly note that you **don't** need to fill in all of the options. The options are as follows:
 
 | Option Name   | Description   |
 |---------------|---------------|
 |  Object Type |  The type of the record you want to search for, i.e., a collection, design, activity, etc. |
-|  Creator | The username of the record\'s creator.  |
+|  Creator | The username of the record's creator.  |
 |  Created After and Created Before  | The timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format.  |
 | Modified After Modified Before  | The timeframe in which the record was last modified. Make sure to enter the dates in the **YYYY-MM-DD** format. |
 | ID/Name/Description | Enter the ID, name, or description of the record which you want to search for. |
@@ -56,7 +56,7 @@ On the search results page, there is a column on the left-hand side that contain
 | Collections| You may select any number of collections based on your convenience. To select a collection, click on the value attribute of the collection and select it from the dropdown menu. |
 | Customizable Filters | You may apply customized filters for the design you want to search for. For that purpose, click **add filter**, and a dropdown menu will appear having various parameters for filtering. These parameters are basically the properties for filtering the records. Select the property that you want your record to be filtered by, and then click on filter. This shall reload the page, and then select the value of the filter from the dropdown on the right-hand side. You may provide as many as 5 customized filters, which are optional. |
 
-After selecting the desired options for performing a search using advanced parameters, click **search**. This will return the records after comprehending all the details that you\'ve entered.
+After selecting the desired options for performing a search using advanced parameters, click **search**. This will return the records after comprehending all the details that you've entered.
 
 - Just below, there is an option to create a **new collection** as well. If you wish to create a collection from your search results, you need to fill in the following items:
 
@@ -67,11 +67,11 @@ After selecting the desired options for performing a search using advanced param
   | Collection ID | This is a user-defined alphanumeric string identifier for the submission, and it should contain alphanumeric and underscore characters only. |
   | Collection Version| This is the alphanumeric string which is associated with the submission. |
 
-After you\'ve filled in all the available options, click on **create collection**. This will return the search results to you in the form of a private collection.
+After you've filled in all the available options, click on **create collection**. This will return the search results to you in the form of a private collection.
 
 ### 1.4 SPARQL Search
 
-On the search results page, there is a button labeled SPARQL. Clicking on that button will direct you to the SPARQL page. Since **[SPARQL is a query language](https://www.w3.org/TR/sparql11-query/)**, it will query SynBioHub\'s databases for the designs that you are looking for. On the SPARQL page, you can select the graph that is from **private** or **public**. Here, **public** means searching amongst the public submissions that can be viewed by all, and **private** means the ones that are your personal collections.
+On the search results page, there is a button labeled SPARQL. Clicking on that button will direct you to the SPARQL page. Since **[SPARQL is a query language](https://www.w3.org/TR/sparql11-query/)**, it will query SynBioHub's databases for the designs that you are looking for. On the SPARQL page, you can select the graph that is from **private** or **public**. Here, **public** means searching amongst the public submissions that can be viewed by all, and **private** means the ones that are your personal collections.
 
 In the box provided just below the graphs dropdown, enter the SPARQL query. Following is an example that selects all SBOL components that have an SO role type. It returns the part title, part role, part display ID, part URI, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your preferred type:
 

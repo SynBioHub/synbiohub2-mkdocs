@@ -13,7 +13,7 @@ To run the base configuration:
 
 1. Before trying to run SynBioHub2 locally on your PC, make sure that you have [Git](https://git-scm.com/downloads) and [Docker](https://docs.docker.com/get-started/get-docker/) installed.
 
-2. Open the terminal/cmd. You may need to run some commands as administrator/superuser. If you run into any errors, try this first. Tip for Windows: you need to start the terminal app as admin, and you can\'t run individual commands as admin like on macOS or Linux.
+2. Open the terminal/cmd. You may need to run some commands as administrator/superuser. If you run into any errors, try this first. Tip for Windows: you need to start the terminal app as admin, and you can't run individual commands as admin like on macOS or Linux.
 
 3. Navigate to the directory where you want to install SynBioHub2.
 

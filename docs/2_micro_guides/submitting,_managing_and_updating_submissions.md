@@ -8,7 +8,7 @@ weight: 40
 
 To submit your designs to SynBioHub, follow these steps:
 
-1. Navigate to SynBioHub\'s home page.
+1. Navigate to SynBioHub's home page.
 
 2. Click on the **Submit** option, and it will direct you to the Submit page.
 
@@ -63,7 +63,7 @@ Now, there are two ways to make your submissions: creating a new collection and 
 
 ## 4.2 Managing Submissions
 
-1. Navigate to SynBioHub\'s home page.
+1. Navigate to SynBioHub's home page.
 
 2. Click on **manage submissions**. On this page, you will be able to see collections broadly divided into two categories. The first one is **public collections**, which you have created and only you have access to them, and the second one is **private collections**, to which all users have access.
 

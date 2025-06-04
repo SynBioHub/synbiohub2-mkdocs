@@ -17,7 +17,7 @@ Finally, you can pick if you want the instance to be public.
 
 ## 2. Technical Details
 
-You can change these, but they should already be prefilled based on your URL, so we don\'t recommend modifying them. If you are deploying publicly, you will need to set up a reverse proxy to host both the frontend and backend at the same URL and port.
+You can change these, but they should already be prefilled based on your URL, so we don't recommend modifying them. If you are deploying publicly, you will need to set up a reverse proxy to host both the frontend and backend at the same URL and port.
 
 ## 3. Creating Your First User Account
 
@@ -26,7 +26,7 @@ You need to create a user account that will have the first privileged access to 
 | Option Name | Description   |
 |-------------|----------|
 | Full Name   | Enter the name of the user.|
-| Affiliation (Optional)| You can enter the name of the university/institute that you\'re currently affiliated to.|
+| Affiliation (Optional)| You can enter the name of the university/institute that you're currently affiliated to.|
 | Email Address| Enter the Email Address through which you want to get registered. If in the future you forget your login credentials, then this shall be used for sending a recovery password for your account.|
 | Username | You have to enter a username of your own choice. This shall be displayed on the record page of every record that you submit.|
 |Password | Enter a password (preferably a strong one) for keeping your user account safe.|
@@ -35,7 +35,7 @@ You need to create a user account that will have the first privileged access to 
 
 External authentication basically, is the use of third-party authentication sources to decide whether a user should be allowed access to a system, and often what level of access an authenticated user enjoys on a system.
 
-For a SynBioHub local instance, you\\\'ve got 2 options i.e, **none** or **google**. If you\\\'ll select none as your preferred authorisation provider then, you simply have to click **continue**.
+For a SynBioHub local instance, you've got 2 options i.e, **none** or **google**. If you'll select none as your preferred authorisation provider then, you simply have to click **continue**.
 
 To be able to use Google for authentication, you first need to register with them. This is done at their developer **[console](https://console.developers.google.com/)**. To learn more about using google as your service provider, click **[here](https://docs.identityserver.io/en/release/quickstarts/4_external_authentication.html#adding-google-support)**. Now, if you select google as your preferred authorisation provider, then the you have to provide certain values for the following options:
 
@@ -47,10 +47,10 @@ To be able to use Google for authentication, you first need to register with the
 
 
 
-If you want to obtain your client ID and client secret, you can visit **[Google\\\'s documentation](https://developers.google.com/adwords/api/docs/guides/authentication)** for further reference.  -->
+If you want to obtain your client ID and client secret, you can visit **[Google's documentation](https://developers.google.com/adwords/api/docs/guides/authentication)** for further reference.  -->
 
 ## All Done
 
-Once you\\\'ve filled all the details, click the **continue** button on the setup page. This will redirect you to the home page of your SynBioHub instance.
+Once you've filled all the details, click the **continue** button on the setup page. This will redirect you to the home page of your SynBioHub instance.
 
 **[Next, let's install some Plugins](../3_advanced/plugins.md)**
