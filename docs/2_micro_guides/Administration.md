@@ -67,7 +67,7 @@ To enable SynBioHub to send account-related emails, you need a SendGrid account 
 1. The API key is shown only once due to security reasons, so try to save it in a safe place.
 1. Your API key has been created and is ready to use!
 
-1. **SendGrid API key**: For generating an API key, you need to have a SendGrid account. To sign-up for SendGrid and generate an API key, click [here](/1_getting_started/setup/#setting-up-sendgrid).
+1. **SendGrid API key**: For generating an API key, you need to have a SendGrid account. To sign-up for SendGrid and generate an API key, click [here](../1_getting_started/setup.md#setting-up-sendgrid).
 1. **SendGrid From Email**:  Here, you can enter the email which you can use for sending emails.
 
 ## 6.5 Plugins
