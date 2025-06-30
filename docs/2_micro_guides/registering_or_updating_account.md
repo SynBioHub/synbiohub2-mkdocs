@@ -12,7 +12,9 @@ Follow these steps to register on SynBioHub:
 
 2. Click on the **Sign In** option on the top right-hand side of your Screen.
 
-3. Enter the following details to complete your registration process:
+3. Click **Join now** at the bottom of the page.
+
+4. Enter the following details to complete your registration process:
 
    | Option Name | Description   |
    |-------------|----------|
@@ -22,7 +24,7 @@ Follow these steps to register on SynBioHub:
    | Username | You have to enter a username of your own choice. This shall be displayed on the record page of every record that you submit. |
    | Password | Enter a password (preferably a strong one) for keeping your user account safe. |
 
-4. Click **Register**.
+5. Click **Create Account**.
 
 ## 3.2 Updating an Account
 
