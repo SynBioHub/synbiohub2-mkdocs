@@ -16,7 +16,7 @@ To run the base configuration:
 2. Open the terminal/cmd. You may need to run some commands as administrator/superuser. If you run into any errors, try this first. 
 
    - **Tip for Windows:** You need to start the terminal app as admin, and you can't run individual commands as admin like on macOS or Linux. 
-   - **Tip for macOS/Linux:** If your Linux distribution is older, Docker may not automatically add your user to its group. On Linux, this can be fixed by adding your user to the `docker` group with the `sudo usermod -aG docker $USER` command. Alternatively, running Docker as `sudo docker` should always work on both macOS and Linux as long as Docker is running. Docker runs as a service on Linux (`sudo systemctl status docker`) and as an app on macOS.
+   - **Tip for macOS/Linux:** If your Linux distribution is older, Docker may not automatically add your user to its group. On Linux, this can be fixed by adding your user to the `docker` group with the `sudo usermod -aG docker $USER` command, you will need to reboot after this or at a minimum restart docker and logout. Alternatively, running Docker as `sudo docker` should always work on both macOS and Linux as long as Docker is running. Docker runs as a service on Linux (`sudo systemctl status docker`) and as an app on macOS.
 
 3. Navigate to the directory where you want to install SynBioHub2.
 
