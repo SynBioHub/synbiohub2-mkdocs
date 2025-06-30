@@ -78,7 +78,7 @@ They are broadly classified into 3 types, which are as follows:
 
 1. Submit: Submit plugins are available to use from the submit endpoint. They work by taking in the file that is uploaded in the submit and processing it to return SBOL to the SynBioHub endpoint.
 
-2. Visual: Visual plugins are available on all 'endpoint' pages, for example, pages for components, sequences, activities, etc. Visual plugins return HTML to be displayed on the page.
+2. Visual: Rendering plugins are available on all 'endpoint' pages, for example, pages for components, sequences, activities, etc. Rendering plugins return HTML to be displayed on the page.
 
 3. Download: Download plugins are available on all 'endpoint' pages, for example, pages for components, sequences, activities, etc. Download plugins return some kind of file which is downloaded by the user.
 

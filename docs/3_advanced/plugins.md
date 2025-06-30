@@ -11,7 +11,7 @@ Plugins are modular stand-alone additions to SynBioHub. They function in a way t
 Currently there are three types of plugins available: 
 1. Submit: Submit plugins are available to use from the [submit endpoint](https://synbiohub.github.io/api-docs/?python#submission-endpoints). They work by taking in the file that is uploaded in the submit and processing it to return SBOL to the SynBioHub endpoint.
 
-2. Visual: Visual plugins are available on all 'endpoint' pages, for example pages for components, sequences, activities, etc. Visual plugins return html to be displayed on the page.
+2. Rendering: Rendering plugins are available on all 'endpoint' pages, for example pages for components, sequences, activities, etc. Rendering plugins return html to be displayed on the page.
 
 3. Download: Download plugins are available on all 'endpoint' pages, for example pages for components, sequences, activities, etc. Download plugins return some kind of file which is downloaded by the user.
 
