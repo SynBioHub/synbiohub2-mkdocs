@@ -139,7 +139,7 @@ For github repositories, the naming convention for plugin repositories is:
 
 **Note**: The words are separated by a dash (-) and every word but the program language is Proper case (Initial letter is capitalized and the further letters aren't).
 
-For *Type* it is: Submit, Visual, Download
+For *Type* it is: Submit, Rendering, Download
 
 For *Test*: add the Test to the name if it is a framework plugin simply showing off how to write a particular plugin type
 
@@ -168,7 +168,7 @@ Docker Image Name: synbiohub/plugin-visual-component-use:snapshot (Note that the
 ### 3.2 Basic Structure
 In this section *what the server receives* and the *format of its response* is defined. Below is a section about writing a server/plugin by simply copying and editing the example type.
 
-#### 3.2.1 Visual
+#### 3.2.1 Rendering
 
 ##### 3.2.1.1 Status
 
@@ -238,11 +238,11 @@ Sequence View Plugin is a visualisation plugin engine for SynBioHub to enhance t
 
 ###### Python
 
-A full example of a visual plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test`
+A full example of a rendering plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test`
 
 ###### Javascript
 
-A full example of a visual plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test-js`
+A full example of a rendering plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test-js`
 
 
 ### 3.3 Submit
