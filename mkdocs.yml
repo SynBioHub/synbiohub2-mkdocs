@@ -3,6 +3,7 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.prefetch
+    - navigation.indexes
   name: material
   logo: images/brand.svg
   favicon: images/favicon.ico
