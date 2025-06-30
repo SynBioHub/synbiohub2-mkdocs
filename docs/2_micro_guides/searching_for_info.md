@@ -12,6 +12,19 @@ To search amongst various records, follow these steps:
 
 1. Navigate to SynBioHub's home page.
 
+2. Click on the search icon in the top right corner of the page. This will take you to the search page.
+
+3. In the search box, enter the keywords for the record you want to search for and click on the search button.
+
+4. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description, type of the record, and privacy shall be displayed. The description column contains a brief description provided by the owner of that particular record. On the right-hand side, there is an indicator displaying whether it is a **public**, **private**, or a **remote** record. The privacy labels indicate:
+    - Private: The record is available only to specific users through a private repository.
+    - Public: The record is accessible to all SynBioHub users.
+    - Remote: The record is publicly available but hosted on another instance of SynBioHub.
+
+5. If you see the record you want, you can select it. Else, you can select next or any of the other page numbers to navigate to the other pages to look for the record you desire amongst other records.
+
+6. On this page, you are also able to see other search options, such as sequence, advanced, or SPARQL search, which are described in detail in the upcoming sections.
+
 2. In the search box, enter the keywords for the record you want to search for and click on the search button.
 
 3. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description, type of the record, and privacy shall be displayed. The description column contains a brief description provided by the owner of that particular record. On the right-hand side, there is an indicator displaying whether it is a **public**, **private**, or a **remote** record. The privacy labels indicate:
