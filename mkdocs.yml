@@ -27,3 +27,10 @@ plugins:
         default_page_name: Index
 markdown_extensions:
   - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
