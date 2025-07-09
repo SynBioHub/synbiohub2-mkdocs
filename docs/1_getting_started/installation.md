@@ -26,7 +26,7 @@ To run the base configuration:
 
 4. Subsequently, enter the following command into your terminal:
 
-   ```bash
+   ```
    git clone -b snapshot https://github.com/SynBioHub/SynBioHub2-docker
    cd SynBioHub2-docker
    ```
