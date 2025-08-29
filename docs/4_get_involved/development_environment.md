@@ -52,12 +52,16 @@ Within the `docker-compose-dev.yml` file there are some environment variables. T
 
 ### Code Changes
 
-1. **Frontend Changes**: Edit files in `synbiohub3/src/`
+#### **Frontend Changes**: 
+   - Edit files in `synbiohub3/src/`
    - Changes are automatically reloaded
    - Check browser console for errors
 
-2. **Backend Changes**: Edit files in `synbiohub/`
-   - Restart the backend server for code changes, with `docker compose -f docker-compose-dev.yml down`
+#### **Backend Changes**:
+   - Edit files in `synbiohub/`
+   - Restart the backend server for code changes:
+      - Stop the backend server: `docker compose -f docker-compose-dev.yml down`
+      - Start the backend server: `docker compose -f docker-compose-dev.yml up`
    - Check backend server logs for errors or browse to localhost:7777
 
 ### Testing
