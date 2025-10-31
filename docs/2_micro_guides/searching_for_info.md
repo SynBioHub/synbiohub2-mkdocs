@@ -4,45 +4,28 @@ weight: 10
 
 # Searching for Information
 
-There are a variety of ways to search for information in SynBioHub, such as using keywords, sequences, advanced searches, and SPARQL queries. They are explained in detail as follows:
+There are a variety of ways to search for information in SynBioHub, such as using keywords, sequences, advanced searches, and SPARQL queries. To get to the search section click on the search icon in the top right corner of the page. This will take you to the search page.
 
 ### 1.1 Keyword Search
 
-To search amongst various records, follow these steps:
+To use keyword search, follow these steps:
 
-1. Navigate to SynBioHub's home page.
-
-2. Click on the search icon in the top right corner of the page. This will take you to the search page.
-
-3. In the search box, enter the keywords for the record you want to search for and click on the search button.
-
-4. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description, type of the record, and privacy shall be displayed. The description column contains a brief description provided by the owner of that particular record. On the right-hand side, there is an indicator displaying whether it is a **public**, **private**, or a **remote** record. The privacy labels indicate:
+1. In the search box, enter the keywords for the record you want to search for, the results will load automatically showing a list of records matching the keywords that you've entered. The description column contains a brief description provided by the owner of that particular record. Furthest right, there is an indicator displaying whether it is a **public**, **private**, or a **remote** record. The privacy labels indicate:
     - Private: The record is available only to specific users through a private repository.
     - Public: The record is accessible to all SynBioHub users.
     - Remote: The record is publicly available but hosted on another instance of SynBioHub.
 
-5. If you see the record you want, you can select it. Else, you can select next or any of the other page numbers to navigate to the other pages to look for the record you desire amongst other records.
-
-6. On this page, you are also able to see other search options, such as sequence, advanced, or SPARQL search, which are described in detail in the upcoming sections.
-
-2. In the search box, enter the keywords for the record you want to search for and click on the search button.
-
-3. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description, type of the record, and privacy shall be displayed. The description column contains a brief description provided by the owner of that particular record. On the right-hand side, there is an indicator displaying whether it is a **public**, **private**, or a **remote** record. The privacy labels indicate:
-    - Private: The record is available only to specific users through a private repository.
-    - Public: The record is accessible to all SynBioHub users.
-    - Remote: The record is publicly available but hosted on another instance of SynBioHub.
-
-4. If you see the record you want, you can select it. Else, you can select next or any of the other page numbers to navigate to the other pages to look for the record you desire amongst other records.
-
-5. On this page, you are also able to see other search options, such as sequence, advanced, or SPARQL search, which are described in detail in the upcoming sections.
+2. To find the record you want you may have to check the next page, we show 50 entries per page by default. To see the next page use the arrow buttons in the top right.
 
 ### 1.2 Sequence Search
 
-On the search results page, there is a button labeled **sequence search**. Clicking on that button will direct you to a page containing a list of sequence search options. To search using a sequence, you can provide the values for the options, as described in the table below:
+On the search page, there is a tab labeled **sequence search**. Clicking it will direct you to a page containing a list of sequence search options. To search using a sequence, you can provide the values for the options, as described in the table below:
 
 | Option Name         |              Description     |
 |---------------------|------------------------------|
 | Enter Sequence      | Enter the sequence or upload a **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)/[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)** file by clicking the choose file option just below the box. This shall search only for exact matches of the sequence. Your entry must be the first key/value pair.   |
+
+| SBOLExplorer Option | Descripthion
 | Search Method       | You can choose the perspective of your search. You can perform a **global** search or an **exact** search. The exact search shall display those records which are an exact match to the sequences that you've entered, and the global search will display those results which have even the smallest of similarities to the sequence that you've entered.  |
 |  Number of Results                   | You may customize the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that the higher the value, the longer the runtime.  |
 | Minimum Sequence Length |You need to enter the minimum sequence length. This value specifies the minimum length of the sequence which you want to search for. Values for this parameter should not exceed 100,000. |

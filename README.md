@@ -12,7 +12,7 @@ build the docker container
 docker build -t my-mkdocs .
 ```
 
-run the docker container on localhost:9090
+run the docker container on [localhost:9090](http://localhost:9090)
 ```bash
 docker run --rm -it -p 9090:8000 -v ${PWD}:/docs my-mkdocs serve -a 0.0.0.0:8000
 ```
