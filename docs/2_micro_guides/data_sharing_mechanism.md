@@ -2,7 +2,7 @@
 weight: 50
 ---
 
-# Data Sharing Mechanism (Beta) ✓
+# Data Sharing Mechanism (Beta)
 
 ## Using the Share Option
 
