@@ -59,6 +59,28 @@ To run the base configuration:
    `docker-compose -f ./docker-compose.yml down`
 
 
+## Configuration
+
+### Backend URL
+
+The frontend backend URL can be configured using the `SYNBIOHUB_BACKEND` environment variable. If not set, it defaults to `http://localhost:7777`.
+
+To use a custom backend URL, you can set it when starting Docker Compose:
+
+```bash
+SYNBIOHUB_BACKEND=http://your-backend-url:port docker-compose -f ./docker-compose.yml up
+```
+
+Alternatively, you can create a `.env` file in the same directory as `docker-compose.yml`:
+
+```bash
+cp .env.example .env
+# Edit .env and uncomment/set SYNBIOHUB_BACKEND
+docker-compose -f ./docker-compose.yml up
+```
+
+This is particularly useful when deploying SynBioHub2 in production environments where the backend may be hosted on a different server or port.
+
 ## With SBOLExplorer
 You can also run SynBioHub2 by using SBOLExplorer.
 To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main Docker Compose file, i.e., for step 5, run the following command:
