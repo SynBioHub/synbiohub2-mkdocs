@@ -1,4 +1,6 @@
 site_name: SynBioHub2 Docs
+hooks:
+  - hooks.py
 theme:
   features:
     - navigation.instant

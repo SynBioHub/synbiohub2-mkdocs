@@ -17,6 +17,22 @@ run the docker container on [localhost:9090](http://localhost:9090)
 docker run --rm -it -p 9090:8000 -v ${PWD}:/docs my-mkdocs serve -a 0.0.0.0:8000
 ```
 
+### Backend URL Configuration
+The documentation can reference a SynBioHub backend instance using the `SYNBIOHUB_BACKEND_URL` environment variable. By default, it points to `http://localhost`.
+
+To use a different backend URL, set the environment variable:
+```bash
+export SYNBIOHUB_BACKEND_URL=https://synbiohub.org
+mkdocs serve
+```
+
+Or with Docker:
+```bash
+docker run --rm -it -p 9090:8000 -e SYNBIOHUB_BACKEND_URL=https://synbiohub.org -v ${PWD}:/docs my-mkdocs serve -a 0.0.0.0:8000
+```
+
+The backend URL will be available in documentation templates as `{{ backend_url }}`.
+
 # How To Write
 The section names are in the .nav.yml file in its directory. The section is sorted by its directory name but the title in the .nav.yml file is what is displayed.
 
