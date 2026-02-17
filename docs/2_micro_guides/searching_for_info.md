@@ -25,7 +25,7 @@ On the search page, there is a tab labeled **sequence search**. Clicking it will
 |---------------------|------------------------------|
 | Enter Sequence      | Enter the sequence or upload a **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)/[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)** file by clicking the choose file option just below the box. This shall search only for exact matches of the sequence. Your entry must be the first key/value pair.   |
 
-| SBOLExplorer Option | Descripthion
+| SBOLExplorer Option | Description
 | Search Method       | You can choose the perspective of your search. You can perform a **global** search or an **exact** search. The exact search shall display those records which are an exact match to the sequences that you've entered, and the global search will display those results which have even the smallest of similarities to the sequence that you've entered.  |
 |  Number of Results                   | You may customize the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that the higher the value, the longer the runtime.  |
 | Minimum Sequence Length |You need to enter the minimum sequence length. This value specifies the minimum length of the sequence which you want to search for. Values for this parameter should not exceed 100,000. |
