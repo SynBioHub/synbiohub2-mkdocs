@@ -31,7 +31,7 @@ If you use SynBioHub2, please cite the following papers:
 
 <<Add SynBioHub2 Citation Here>>
 
-Additional references for SynBioHub are available **[here](../5_background/refrences.md)**.
+Additional references for SynBioHub are available **[here](../5_background/references.md)**.
 
 ### SynBioHub2 Contributors
 

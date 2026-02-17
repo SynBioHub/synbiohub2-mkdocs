@@ -27,11 +27,21 @@ To run the base configuration:
 4. Subsequently, enter the following command into your terminal:
 
    ```bash
-   git clone -b snapshot https://github.com/SynBioHub/SynBioHub2-docker
+   git clone https://github.com/SynBioHub/SynBioHub2-docker
    cd SynBioHub2-docker
    ```
 
-   This downloads a copy of the snapshot branch, which is known to work.
+   This downloads a copy of the `release` branch (the default branch), which contains the stable version of SynBioHub2. **We recommend using the `release` branch unless you want to use the latest bleeding-edge features.**
+
+   **Understanding the branches:**
+   - **`release`** (default): The stable, tested version recommended for most users
+   - **`snapshot`**: The latest bleeding-edge version with the newest features but may be less stable
+
+   If you want to use the `snapshot` branch instead, switch to it after cloning:
+
+   ```bash
+   git checkout snapshot
+   ```
 
 5. Then, enter the following command to start the local instance of SynBioHub2:
 

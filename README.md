@@ -36,4 +36,4 @@ The backend URL will be available in documentation templates as `{{ backend_url 
 # How To Write
 The section names are in the .nav.yml file in its directory. The section is sorted by its directory name but the title in the .nav.yml file is what is displayed.
 
-The Document names are dirived from the file names and put into title case, they can be over ridden with a `title: etc` in the frontmater. The documents are sorted from lowest `weight:` to highest.
+The Document names are derived from the file names and put into title case, they can be over ridden with a `title: etc` in the frontmater. The documents are sorted from lowest `weight:` to highest.

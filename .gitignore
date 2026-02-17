@@ -1,4 +1,7 @@
 docs/.DS_Store
 site/
+<<<<<<< copilot/update-env-variable-defaults
 __pycache__/
 *.pyc
+=======
+>>>>>>> main
