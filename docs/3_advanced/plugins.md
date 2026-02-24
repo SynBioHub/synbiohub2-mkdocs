@@ -554,4 +554,4 @@ and then check the logs: `docker logs <short name>`
 
 ## 9. Plugins-Table
 
-A table of currently available plugins can be found **[here](https://wiki.synbiohub.org/synbiohub2-docker/)**.
+A table of currently available plugins can be found **[here](./plugin-table.md)**.
