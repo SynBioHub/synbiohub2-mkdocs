@@ -8,7 +8,8 @@ weight: 40
 Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional 'custom' functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
 
 ### 1.1 Types of Plugins
-Currently there are three types of plugins available: 
+Currently there are three types of plugins available:
+
 1. Submit: Submit plugins are available to use from the [submit endpoint](https://synbiohub.github.io/api-docs/?python#submission-endpoints). They work by taking in the file that is uploaded in the submit and processing it to return SBOL to the SynBioHub endpoint.
 
 2. Rendering: Rendering plugins are available on all 'endpoint' pages, for example pages for components, sequences, activities, etc. Rendering plugins return html to be displayed on the page.
@@ -27,12 +28,12 @@ Currently there are three types of plugins available:
 * Note that plugins are asynchronous meaning that the full SynBioHub page can load without having to wait for the plugin to have returned the  results. Subsequently, when the results are returned SynBioHub substitutes the received information for the placeholder it had used when loading the page initially.
 
 ### 2.2 Installation
-As the plugins are standalone servers & they don't have to be used in conjunction with SynBioHub. Though plugins have been developed to interface directly with SynBioHub, it is possible to install them and then interact with them via the API (from the command line or via a GUI interface such as [Postman](https://www.postman.com/)). Different methods of installation are discussed below. For those who're less-experienced with Programming, it is suggested that you should be using plugins with SynBioHub.
+As the plugins are standalone servers they don't have to be used in conjunction with SynBioHub. Though plugins have been developed to interface directly with SynBioHub, it is possible to install them and then interact with them via the API (from the command line or via a GUI interface such as [Postman](https://www.postman.com/)). Different methods of installation are discussed below. For those who're less-experienced with Programming, it is suggested that you should be using plugins with SynBioHub.
 
 #### 2.2.1 Using SynBioHub
  
-A detailed explaination on how to install SynBioHub on various operating systems is written [here](https://synbiohub.github.io/installation/)
-A full list of plugin file names and their descriptions can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
+A detailed explanation on how to install SynBioHub on various operating systems is written [here](https://synbiohub.github.io/installation/)
+A full list of plugin file names and their descriptions can be found [here](./plugin-table.md).
 
 ##### 2.2.1.1 Common Problems
 
@@ -42,7 +43,7 @@ The most common problems that you may face while executing the commands mentione
   If you now see the image(s) you were missing with the status 'created' it suggests that they have a port clash. If this is the case you can go in the docker-compose file for the appropriate plugin and change the port number (the first four digit number under “ports”). Then try running step 4 of the above commands again.
 
 
-2. If you've locally installed SynBioHub using the above commands it might cause issues in some plugins, that will receive urls that look like: ``http://localhost:7777/xxxxxxx``. Localhost in docker containers refers to the container itself. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and the solution cab be found on [stack overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container) and on [docker](https://docs.docker.com/network/host/).
+2. If you've locally installed SynBioHub using the above commands it might cause issues in some plugins, that will receive urls that look like: ``http://localhost:7777/xxxxxxx``. Localhost in docker containers refers to the container itself. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). You must either run synbiohub and all plugins from the same Docker compose, and set the pluginLocalComposePrefix to the name of the Synbiohub Docker container, or run all code from command line source (see Synbiohub documentation and later sections on plugin installation for further details). For detailed instructions on how to run Synbiohub and plugins on Docker, see the workshop instructions [here](https://github.com/SynBioHub/synbiohub3/wiki/Workshop-Instructions).
 
 
 ##### 2.2.1.2 Adding Plugins to the Admin Panel
@@ -50,7 +51,7 @@ The most common problems that you may face while executing the commands mentione
 After getting the plugins up and running you still have to add them to the admin panel in SynBioHub. Navigate to the plugin section of the admin panel. Choose the appropriate section i.e, rendering, submit, or download and give the plugin a descriptive name. Then in the url section there are several different options depending on exactly how the plugin was brought up:
 
 * If plugins were brought up using docker compose:
-Use `http://localhost:<port>/` e.g. `http://localhost:8093/` for the Excel Submit Library plugin Or use the following alternative: `http://<docker container name>:5000/` e.g. `http://synbiohub-docker_pluginSubmitExcelLibrary_1:5000/` for the Excel Submit Library plugin.
+Use `http://localhost:<port>/` e.g. `http://localhost:8093/` for the Excel Submit Library plugin Or use the following alternative: `http://<docker container name>:5000/` e.g. `http://pluginSubmitExcelLibrary:5000/` for the Excel Submit Library plugin.
 
 * Another alternative that is not recommended but still can be used is to enter `http://<synbiohub docker network ip address>:<port> /` e.g. `http://172.18.0.1:8093/` for the Excel Submit Library plugin when the synbiohub-docker network is "172.18.0.1".
 
@@ -72,7 +73,7 @@ It is suggested that the same publish ports are used when using docker compose. 
 ##### 2.2.2.1 Common Problems
 The most common problems that you may face while executing the commands mentioned above are as follows:-
 
-1. Localhost:-  If the plugin is being run as a docker container that localhost may cause problems as localhost is considered within the container and won't point to the localhost on your computer. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and solution can be found on [stack-overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container and https://docs.docker.com/network/host/).
+1. Localhost:-  If the plugin is being run as a docker container that localhost may cause problems as localhost is considered within the container and won't point to the localhost on your computer. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). You must either run synbiohub and all plugins from the same Docker compose, and set the pluginLocalComposePrefix to the name of the Synbiohub Docker container, or run all code from command line source (see Synbiohub documentation and later sections on plugin installation for further details). For detailed instructions on how to run Synbiohub and plugins on Docker, see the workshop instructions [here](https://github.com/SynBioHub/synbiohub3/wiki/Workshop-Instructions).
 
 #### 2.2.3 Using Standalone Methods
 
@@ -139,7 +140,7 @@ For github repositories, the naming convention for plugin repositories is:
 
 **Note**: The words are separated by a dash (-) and every word but the program language is Proper case (Initial letter is capitalized and the further letters aren't).
 
-For *Type* it is: Submit, Rendering, Download
+For *Type* it is: Submit, Visual, Download
 
 For *Test*: add the Test to the name if it is a framework plugin simply showing off how to write a particular plugin type
 
@@ -168,7 +169,7 @@ Docker Image Name: synbiohub/plugin-visual-component-use:snapshot (Note that the
 ### 3.2 Basic Structure
 In this section *what the server receives* and the *format of its response* is defined. Below is a section about writing a server/plugin by simply copying and editing the example type.
 
-#### 3.2.1 Rendering
+#### 3.2.1 Visual
 
 ##### 3.2.1.1 Status
 
@@ -205,6 +206,7 @@ Return a status of 200 if the type is acceptable and a 4xx status if it isn't.
 5. instanceUrl: The top-level URL of the synbiohub instance
 6. size: A number representing an estimate of the size of the object, probably triple count
 7. type: The RDF type of the top-level object
+8. token (optional): A user authorization token provided by Synbiohub, required for closed instances
 
 Common RDF types are:
 'Activity', 'Agent', 'Association', 'Attachment', 'Collection', 'CombinatorialDerivation', 'Component', 'ComponentDefinition', 'Cut', 'Experiment', 'ExperimentalData', 'FunctionalComponent','GenericLocation', 'Implementation', 'Interaction', 'Location', 'MapsTo', 'Measure', 'Model', 'Module', 'ModuleDefinition', 'Participation', 'Plan', 'Range', 'Sequence', 'SequenceAnnotation', 'SequenceConstraint', 'Usage', 'VariableComponent'
@@ -216,7 +218,8 @@ Common RDF types are:
  'top_level': 'https://synbiohub.org/public/igem/BBa_E0040/1',
  'size': 5,
  'type': 'Component',
- 'instanceUrl': 'https://dev.synbiohub.org/'}
+ 'instanceUrl': 'https://dev.synbiohub.org/',
+ 'token': '507c2809-f832-41d4-84c8-ee9d0f8b134d'}
  
 
 * Example 2:
@@ -226,7 +229,8 @@ Common RDF types are:
 'top_level': 'https://synbiohub.org/public/igem/BBa_E0240_sequence/1', 
 'size': 2, 
 'type': 'Sequence', 
-'instanceUrl': 'https://synbiohub.org/'}
+'instanceUrl': 'https://synbiohub.org/',
+'token': '507c2809-f832-41d4-84c8-ee9d0f8b134d'}
 
 
 ###### Returns
@@ -238,11 +242,11 @@ Sequence View Plugin is a visualisation plugin engine for SynBioHub to enhance t
 
 ###### Python
 
-A full example of a rendering plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test`
+A full example of a visual plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test`
 
 ###### Javascript
 
-A full example of a rendering plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test-js`
+A full example of a visual plugin can be found at: `https://github.com/SynBioHub/Plugin-Visual-Test-js`
 
 
 ### 3.3 Submit
@@ -458,17 +462,20 @@ size: a number representing an estimate of the size of the object, probably trip
 
 type: The RDF type of the top-level object
 
+token (optional): A user authorization token provided by Synbiohub, required for closed instances
+
 Common RDF types are:
 
 'Activity', 'Agent', 'Association', 'Attachment', 'Collection', 'CombinatorialDerivation', 'Component', 'ComponentDefinition', 'Cut', 'Experiment', 'ExperimentalData', 'FunctionalComponent','GenericLocation', 'Implementation', 'Interaction', 'Location', 'MapsTo', 'Measure', 'Model', 'Module', 'ModuleDefinition', 'Participation', 'Plan', 'Range', 'Sequence', 'SequenceAnnotation', 'SequenceConstraint', 'Usage', 'VariableComponent'
 
 
 * Example 1:
-{'complete_sbol': 'https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbol', 'shallow_sbol': 'https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbolnr', 'genbank': 'https://dev.synbiohub.org/public/igem/BBa_E0240/1/gb', 'top_level': 'https://synbiohub.org/public/igem/BBa_E0240/1', 'size': 39, 'type': 'Component', 'instanceUrl': 'https://dev.synbiohub.org/'}
+{'complete_sbol': 'https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbol', 'shallow_sbol': 'https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbolnr', 'genbank': 'https://dev.synbiohub.org/public/igem/BBa_E0240/1/gb', 'top_level': 'https://synbiohub.org/public/igem/BBa_E0240/1', 'size': 39, 'type': 'Component', 'instanceUrl': 'https://dev.synbiohub.org/','token': '507c2809-f832-41d4-84c8-ee9d0f8b134d'}
 
 
 * Example 2:
-{'complete_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbol', 'shallow_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbolnr', 'genbank': 'https:// synbiohub.org/public/igem/BBa_E0240/1/gb', 'top_level': 'https://synbiohub.org/public/igem/BBa_E0240/1', 'size': 39, 'type': 'Component', 'instanceUrl': 'https:// synbiohub.org/' }
+{'complete_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbol', 'shallow_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbolnr', 'genbank': 'https:// synbiohub.org/public/igem/BBa_E0240/1/gb', 'top_level': 'https://synbiohub.org/public/igem/BBa_E0240/1', 'size': 39, 'type': 'Component', 'instanceUrl': 'https:// synbiohub.org/',
+ 'token': '507c2809-f832-41d4-84c8-ee9d0f8b134d'}
 
 
 #####  Returns
